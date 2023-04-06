@@ -3,11 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "Joeys new website",
-    siteUrl: "https://www.yourdomain.tld",
+    title: "Joey's New Website",
+    siteUrl: "https://jsephora.gatsbyjs.io/",
+    description:
+      "A website I am building in order to refresh my ReactJS skills and learn about the new features of Gatsby 5",
   },
-  plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
-  ],
-}
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+};
