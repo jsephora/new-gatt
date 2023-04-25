@@ -8,19 +8,29 @@ module.exports = {
     description: "A website I am building in order to refresh my ReactJS skills and learn about the new features of Gatsby 5",
   },
   plugins: [
-    "gatsby-plugin-image", 
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-sass",
+    `gatsby-plugin-image`, 
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        // Defaults used for gatsbyImageData and StaticImage
+        defaults: {},
+        // Relates to "options.failOn" in https://sharp.pixelplumbing.com/api-constructor#parameters
+        failOn: `warning`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
       options: {
         // rome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
 name: `work`,
         path: `${__dirname}/work`,
       }
     },
-    "gatsby-plugin-mdx",
-    "gatsby-transformer-sharp",
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

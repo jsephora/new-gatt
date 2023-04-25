@@ -1,11 +1,11 @@
 import * as React from "react";
-import Layout from "../components/layout";
+import HomeLayout from "../components/homelayout";
 import { StaticImage } from "gatsby-plugin-image";
 import Seo from "../components/seo";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
+    <HomeLayout pageTitle="Home Page">
       <p>Hello Billy! Have you done guju guju pe?.</p>
       <StaticImage
         alt="people walking between city buildings in Japan"
@@ -37,7 +37,7 @@ const IndexPage = () => {
         second half of March, and the first half of April (sakura bloom
         schedules, too, vary significantly depending on location).
       </p>
-    </Layout>
+    </HomeLayout>
   );
 };
 
