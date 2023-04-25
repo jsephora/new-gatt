@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Billy Page">
+    <Layout pageTitle="Home Page">
       <p>Hello Billy! Have you done guju guju pe?.</p>
       <StaticImage
         alt="people walking between city buildings in Japan"

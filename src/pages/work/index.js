@@ -3,7 +3,7 @@ import {Link, graphql} from 'gatsby'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
-const BlogPage = ({data}) => {
+const WorkPage = ({data}) => {
     return (
         <Layout pageTitle="My Blog Posts">
             {data
@@ -12,7 +12,7 @@ const BlogPage = ({data}) => {
                 .map((node) => (
                     <article key={node.id}>
                         <h2>
-                            <Link to={`/blog/${node.frontmatter.slug}`}>
+                            <Link to={`/work/${node.frontmatter.slug}`}>
                                 {node.frontmatter.title}
                             </Link>
                         </h2>
@@ -43,4 +43,4 @@ export const query = graphql `
 
 export const Head = () => <Seo title="My Blog Posts"/>
 
-export default BlogPage
+export default WorkPage
