@@ -1,17 +1,15 @@
-import * as React from "react";
-import Navbar from "./navbar";
-import {
-  container,
-} from "./homelayout.module.scss";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react'
+import MainNav from './mainnav'
+import { container } from './homelayout.module.scss'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const HomeLayout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      <MainNav />
       <StaticImage
         alt=""
-        src="../images/homepage-background.png"
+        src="../images/homepage-background.jpg"
       />
       <div className={container}>
         <main>

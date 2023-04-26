@@ -1,0 +1,13 @@
+/* custom styles */
+// .bg-light {
+//     background-color: #ebebeb !important;
+// }
+
+.navbar-brand a {
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:visited {
+        color: #707070;
+    }
+}

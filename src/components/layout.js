@@ -1,14 +1,11 @@
 import * as React from "react";
-import Navbar from "./navbar";
-import {
-  container,
-  heading,
-} from "./layout.module.scss";
+import { container } from "./layout.module.scss";
+import MainNav from "./mainnav";
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <>
-      <Navbar />
+      <MainNav />
       <div className={container}>
         <main>
           {/* <h1 className={heading}>{pageTitle}</h1> */}
