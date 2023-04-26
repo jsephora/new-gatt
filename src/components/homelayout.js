@@ -8,8 +8,8 @@ const HomeLayout = ({ children }) => {
     <>
       <MainNav />
       <StaticImage
-        alt=""
-        src="../images/homepage-background.jpg"
+        alt="my badboy background image"
+        src="../images/crosswalk.jpg"
       />
       <div className={container}>
         <main>

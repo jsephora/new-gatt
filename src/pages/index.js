@@ -1,6 +1,6 @@
-import * as React from "react";
-import HomeLayout from "../components/homelayout";
-import Seo from "../components/seo";
+import * as React from 'react'
+import HomeLayout from '../components/homelayout'
+import Seo from '../components/seo'
 
 const IndexPage = () => {
   return (
