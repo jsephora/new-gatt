@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+body {
+  font-family: 'Figtree';
+  margin: 0;
+  color: #707070;
+}
+  
+.navbar-brand a {
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:visited {
+      color: #707070;
+  }
+}
