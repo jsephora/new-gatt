@@ -3,9 +3,6 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, useStaticQuery, graphql } from "gatsby";
 import {
   navBar,
-  navLinks,
-  navLinkItem,
-  navLinkText,
   siteTitle,
 } from "./mainnav.module.scss";
 

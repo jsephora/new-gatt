@@ -1,23 +1,26 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: 'Figtree';
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   margin: 0;
+  font-weight: 300;
   color: #707070;
 }
-  
+
 .navbar-brand a {
   text-decoration: none;
   &:hover,
   &:active,
   &:visited {
-      color: #707070;
+    color: #707070;
   }
 }
+

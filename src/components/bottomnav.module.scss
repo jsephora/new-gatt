@@ -1,0 +1,26 @@
+// .container {
+//     margin: auto;
+//     max-width: 1004px;
+// }
+
+.bottom-nav {
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    a {
+        color: #666;
+        padding: 0.75rem;
+        text-decoration: none;
+        &:hover, &:active, &:focus {
+            // text-decoration: underline;
+            color: #F5FC3D;
+        }
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: rgba(0, 0, 0, 0.3) !important;
+}

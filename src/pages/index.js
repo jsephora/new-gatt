@@ -57,6 +57,14 @@ const IndexPage = () => {
   )
 }
 
-export const Head = () => <Seo title='Home' />
+export function Head() {
+  return (
+    <>
+      <html lang="en" className="h-100" />
+      <body className="d-flex flex-column h-100" />
+      <Seo title="Home" />
+    </>
+  )
+}
 
 export default IndexPage
