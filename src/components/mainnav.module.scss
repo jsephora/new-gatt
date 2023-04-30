@@ -2,12 +2,12 @@
 
 .site-title {
     font-size: 1.5rem;
-    color: #707070;
+    color: $grey6;
     margin: 0;
 }
 
 .nav-bar {
-    background-color: #EBEBEB;
+    background-color: $grey2;
     width: 100%;
     padding: 1rem 1.5rem;
     display: flex;
@@ -32,7 +32,7 @@
 }
 
 .nav-link-text {
-    color: #707070;
+    color: $grey6;
 }
 
 .home-link {

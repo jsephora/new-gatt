@@ -11,8 +11,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          includePaths: `${__dirname}/src/styles`,
+          ...
+        }
+      },
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {

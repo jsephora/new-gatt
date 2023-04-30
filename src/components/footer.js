@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import { footerText } from './footer.module.scss'
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <Container className='text-center'>
           <Row className='align-items-center'>
             <Col>
-              <span>© Allied Robotics Pty Ltd</span>
+              <span className={footerText}>© Allied Robotics Pty Ltd</span>
             </Col>
           </Row>
         </Container>

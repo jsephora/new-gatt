@@ -7,20 +7,15 @@
 
 .bottom-nav {
     font-size: 11px;
-    color: #666;
+    color: $grey5;
     text-transform: uppercase;
     margin-bottom: 0.75rem;
+    margin-top: 5rem;
     a {
-        color: #666;
+        color: $grey7;
         padding: 0.75rem;
         text-decoration: none;
     }
-}
-
-.disabled {
-    pointer-events: none;
-    cursor: default;
-    color: rgba(0, 0, 0, 0.3) !important;
 }
 
 .home-link {
