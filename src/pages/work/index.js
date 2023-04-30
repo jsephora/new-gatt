@@ -5,7 +5,7 @@ import Seo from '../../components/seo'
 
 const WorkPage = ({data}) => {
     return (
-        <Layout pageTitle="My Blog Posts">
+        <Layout pageTitle="Work">
             {data
                 .allMdx
                 .nodes
@@ -41,6 +41,6 @@ export const query = graphql `
     }
 `
 
-export const Head = () => <Seo title="My Blog Posts"/>
+export const Head = () => <Seo title="Work"/>
 
 export default WorkPage

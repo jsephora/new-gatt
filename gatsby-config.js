@@ -15,10 +15,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
+        additionalData: `@use 'index' as *;`,
         sassOptions: {
-          includePaths: `${__dirname}/src/styles`,
-          ...
-        }
+          includePaths: [`${__dirname}/src/styles`],
+        },
       },
     },
     {
