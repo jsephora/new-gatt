@@ -1,3 +1,5 @@
+@import '../styles/variables';
+
 .site-title {
     font-size: 1.5rem;
     color: #707070;
@@ -26,13 +28,32 @@
 
     a {
         text-decoration: none;
-
-        &:hover {
-            color: rgb(11, 109, 237);
-        }
     }
 }
 
 .nav-link-text {
     color: #707070;
+}
+
+.home-link {
+    &:hover, &:focus, &:active {
+        color: $blue;
+    }
+}
+
+.work-link {
+    &:hover, &:focus, &:active {
+        color: $orchid;
+    }
+}
+.about-link {
+    &:hover, &:focus, &:active { 
+        color: $mint;
+    }
+}
+
+.resume-link {
+    &:hover, &:focus, &:active {
+        color: $coral;
+    }
 }

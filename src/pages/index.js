@@ -28,7 +28,7 @@ const IndexPage = () => {
             </p>
             <p>
               I'm also a big fan of Chelsea FC and love to watch, play and coach
-              football (or soccer). In my free time*, you can usually find me
+              football. In my free time*, you can usually find me
               taking photos, fixing bicycles and looking after plants.
             </p>
             <p>

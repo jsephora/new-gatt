@@ -1,3 +1,5 @@
+@import 'variables';
+
 html {
   box-sizing: border-box;
 }
@@ -12,7 +14,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   margin: 0;
   font-weight: 300;
-  color: #707070;
+  color: $grey6;
 }
 
 .navbar-brand a {
@@ -20,7 +22,12 @@ body {
   &:hover,
   &:active,
   &:visited {
-    color: #707070;
+    color: $grey6;
   }
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: rgba(0, 0, 0, 0.3) !important;
+}

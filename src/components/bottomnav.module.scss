@@ -1,3 +1,5 @@
+@import '../styles/variables';
+
 // .container {
 //     margin: auto;
 //     max-width: 1004px;
@@ -12,10 +14,6 @@
         color: #666;
         padding: 0.75rem;
         text-decoration: none;
-        &:hover, &:active, &:focus {
-            // text-decoration: underline;
-            color: #F5FC3D;
-        }
     }
 }
 
@@ -23,4 +21,27 @@
     pointer-events: none;
     cursor: default;
     color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.home-link {
+    &:hover, &:focus, &:active {
+        color: $blue;
+    }
+}
+
+.work-link {
+    &:hover, &:focus, &:active {
+        color: $orchid;
+    }
+}
+.about-link {
+    &:hover, &:focus, &:active { 
+        color: $mint;
+    }
+}
+
+.resume-link {
+    &:hover, &:focus, &:active {
+        color: $coral;
+    }
 }
