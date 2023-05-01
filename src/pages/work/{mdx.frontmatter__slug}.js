@@ -4,27 +4,25 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 
-const WorkPost = ({data, children}) => {
-    const image = getImage(data.mdx.frontmatter.hero_image)
-    return (
-        <Layout pageTitle={data.mdx.frontmatter.title}>
-            <p>Posted: {data.mdx.frontmatter.date}</p>
-            <GatsbyImage 
-              image={image}
-              alt={data.mdx.frontmatter.hero_image_alt}
-            />
-            <p>{data.mdx.frontmatter.hero_image_alt}</p>
-            <p>Photo Credit:{" "}
-              <a href={data.mdx.frontmatter.hero_image_credit_link}>
-                {data.mdx.frontmatter.hero_image_credit_text}
-              </a>
-            </p>
-            {children}
-        </Layout>
-    )
+const WorkPost = ({ data, children }) => {
+  const image = getImage(data.mdx.frontmatter.hero_image)
+  return (
+    <Layout pageTitle={data.mdx.frontmatter.title}>
+      <p>Posted: {data.mdx.frontmatter.date}</p>
+      <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
+      <p>{data.mdx.frontmatter.hero_image_alt}</p>
+      <p>
+        Photo Credit:{' '}
+        <a href={data.mdx.frontmatter.hero_image_credit_link}>
+          {data.mdx.frontmatter.hero_image_credit_text}
+        </a>
+      </p>
+      {children}
+    </Layout>
+  )
 }
 
-export const query = graphql `
+export const query = graphql`
   query($id: String) {
     mdx(id: {eq: $id}) {
       frontmatter {
@@ -43,6 +41,6 @@ export const query = graphql `
   }
 `
 
-export const Head = ({data}) => <Seo title={data.mdx.frontmatter.title}/>
+export const Head = ({ data }) => <Seo title={data.mdx.frontmatter.title} />
 
 export default WorkPost

@@ -45,22 +45,18 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-mdx`,
-    // {
-    //   resolve: `gatsby-omni-font-loader`,
-    //   options: {
-    //     enableListener: true,
-    //     preconnect: [
-    //       `https://fonts.googleapis.com`,
-    //       `https://fonts.gstatic.com`,
-    //     ],
-    //     web: [
-    //       {
-    //         name: `Figtree`,
-    //         file: `https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap`,
-    //       },
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
