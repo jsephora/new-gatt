@@ -14,7 +14,7 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   margin: 0;
   font-weight: 300;
-  color: $grey6;
+  color: $body;
 }
 
 .navbar-brand a {
@@ -34,4 +34,11 @@ body {
 
 .bg-dark {
   background-color: $grey8 !important;
+}
+
+caption {
+  border-left: 7px solid $underline;
+  margin: 1rem 0 3rem 0;
+  display: block;
+  padding-left:  2rem;
 }

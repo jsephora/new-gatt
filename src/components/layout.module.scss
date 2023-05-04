@@ -12,15 +12,31 @@ article {
 }
 
 .heading {
-  color: rgb(11, 109, 237);
-}
-
-h1 {
-  color:rgb(11, 109, 237);
+  border-bottom: #CEE6EA;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $grey8;
+  font-weight: 100;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .work-index {
   padding: 3rem;
+}
+
+h3 {
+  color: $heading;
+  font-weight: 400;
+  margin: 3rem 0 1rem; 
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1rem;
+}
+
+li::marker {
+  color: $coral;
+  font-size: 18px;
 }

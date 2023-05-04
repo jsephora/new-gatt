@@ -16,7 +16,7 @@ const WorkPage = ({data}) => {
                                 {node.frontmatter.title}
                             </Link>
                         </h2>
-                        <p>Posted: {node.frontmatter.date}</p>
+                        <p>Posted: {node.frontmatter.hero_image.id}</p>
                         <p>{node.excerpt}</p>
                     </article>
                 ))
@@ -26,19 +26,17 @@ const WorkPage = ({data}) => {
 }
 
 export const query = graphql `
-    query {
-        allMdx(sort: {frontmatter: {date: DESC}}) {
-            nodes {
-                frontmatter {
-                    date(formatString: "MMMM D, YYYY")
-                    title
-                    slug
-                }
-                id
-                excerpt
-            }
+query MyQuery {
+  allMdx {
+    nodes {
+      frontmatter {
+        hero_image {
+          id
         }
+      }
     }
+  }
+}
 `
 
 export const Head = () => <Seo title="Work"/>

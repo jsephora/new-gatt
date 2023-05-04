@@ -7,16 +7,9 @@ import Seo from '../../components/seo'
 const WorkPost = ({ data, children }) => {
   const image = getImage(data.mdx.frontmatter.hero_image)
   return (
-    <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>Posted: {data.mdx.frontmatter.date}</p>
+    <Layout pageTitle={data.mdx.frontmatter.title} subTitle={data.mdx.frontmatter.roles}>
       <GatsbyImage image={image} alt={data.mdx.frontmatter.hero_image_alt} />
-      <p>{data.mdx.frontmatter.hero_image_alt}</p>
-      <p>
-        Photo Credit:{' '}
-        <a href={data.mdx.frontmatter.hero_image_credit_link}>
-          {data.mdx.frontmatter.hero_image_credit_text}
-        </a>
-      </p>
+      <caption>{data.mdx.frontmatter.hero_image_caption}</caption>
       {children}
     </Layout>
   )
@@ -29,8 +22,8 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         hero_image_alt
-        hero_image_credit_link
-        hero_image_credit_text
+        hero_image_caption
+        roles
         hero_image {
           childImageSharp {
             gatsbyImageData
