@@ -1,20 +1,26 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import Subtitle from '../components/subtitle'
-import Underline from '../images/underline.svg'
-import { banner, major, heading } from './banner.module.scss';
+import Underline from '../components/underline'
+import { banner, major, heading } from './banner.module.scss'
 
-const Banner = () => {
+const Banner = ({ title, subtitle, className, fill, bgColor }) => {
   return (
-      <section id={banner} className={`d-flex ${major}`}>
+    <section 
+      id={banner} 
+      className={`d-flex ${major}`}
+      style={{ backgroundColor: `${bgColor}` }}
+      >
+      <Container>
         <Row>
-        <hgroup className='my-5'>
-              <h1 className={heading}>Work</h1>
-              <img src={Underline} className='mb-3' alt='SVG underline image' />
-              <Subtitle>Subtitle goes here</Subtitle>
-            </hgroup>
+          <hgroup className={className}>
+            <h1 className={heading}>{title}</h1>
+            <Underline className='mb-4' fill={fill} />
+            <Subtitle>{subtitle}</Subtitle>
+          </hgroup>
         </Row>
-      </section>
+      </Container>
+    </section>
   )
 }
 

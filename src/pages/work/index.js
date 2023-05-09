@@ -4,7 +4,8 @@ import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Container, Row, Col } from 'react-bootstrap'
-import pic01 from './assets/pic01.jpg'
+import Banner from '../../components/banner'
+import heroClimateActive from './assets/heroClimateActive.jpg'
 import pic02 from './assets/pic02.jpg'
 import pic03 from './assets/pic03.jpg'
 import pic04 from './assets/pic04.jpg'
@@ -14,16 +15,23 @@ import pic06 from './assets/pic06.jpg'
 const WorkPage = () => {
   return (
     <Layout pageTitle='Work'>
+      <Banner 
+        className='something' 
+        title='Work' 
+        subtitle='A small selection of projects I have worked on recently'
+        fill='#FFFF00' 
+        bgColor='#212840'
+      />
       <section id='one' className='tiles'>
-        <article style={{ backgroundImage: `url(${pic01})` }}>
+        <article style={{ backgroundImage: `url(${heroClimateActive})` }}>
           <Link
-            aria-label='Link to Landing Page'
-            to='/landing'
+            aria-label='Link to Climate Active'
+            to='/work/climate-active/'
             className='link primary'
           >
             <header className='major'>
-              <h3>Aliquam</h3>
-              <p>Ipsum dolor sit amet</p>
+              <h3>Climate Active</h3>
+              <p>UI Design, UX Design, Frontend Dev</p>
             </header>
           </Link>
         </article>
