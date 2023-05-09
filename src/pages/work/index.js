@@ -4,51 +4,93 @@ import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Container, Row, Col } from 'react-bootstrap'
+import pic01 from './assets/pic01.jpg'
+import pic02 from './assets/pic02.jpg'
+import pic03 from './assets/pic03.jpg'
+import pic04 from './assets/pic04.jpg'
+import pic05 from './assets/pic05.jpg'
+import pic06 from './assets/pic06.jpg'
 
-const WorkPage = ({ data }) => {
-  // const image = getImage(node.frontmatter.hero_image.GatsbyImage)
+const WorkPage = () => {
   return (
     <Layout pageTitle='Work'>
-      {data.allMdx.nodes.map((node) => (
-        <article key={node.id}>
-          <Col md={6}>
-            <h2>
-              <Link to={`/work/${node.frontmatter.slug}`}>
-                <GatsbyImage
-                  image={node.frontmatter.hero_image.childImageSharp.gatsbyImageData}
-                  alt={node.frontmatter.hero_image_alt}
-                  />
-                {node.frontmatter.title}
-              </Link>
-            </h2>
-            {/* <p>Posted: {node.frontmatter.date}</p> */}
-          </Col>
+      <section id='one' className='tiles'>
+        <article style={{ backgroundImage: `url(${pic01})` }}>
+          <Link
+            aria-label='Link to Landing Page'
+            to='/landing'
+            className='link primary'
+          >
+            <header className='major'>
+              <h3>Aliquam</h3>
+              <p>Ipsum dolor sit amet</p>
+            </header>
+          </Link>
         </article>
-      ))}
+        <article style={{ backgroundImage: `url(${pic02})` }}>
+          <Link
+            aria-label='Link to Landing Page'
+            to='/landing'
+            className='link primary'
+          >
+            <header className='major'>
+              <h3>Tempus</h3>
+              <p>feugiat amet tempus</p>
+            </header>
+          </Link>
+        </article>
+        <article style={{ backgroundImage: `url(${pic03})` }}>
+          <Link
+            aria-label='Link to Landing Page'
+            to='/landing'
+            className='link primary'
+          >
+            <header className='major'>
+              <h3>Magna</h3>
+              <p>Lorem etiam nullam</p>
+            </header>
+          </Link>
+        </article>
+        <article style={{ backgroundImage: `url(${pic04})` }}>
+          <Link
+            aria-label='Link to Landing Page'
+            to='/landing'
+            className='link primary'
+          >
+            <header className='major'>
+              <h3>Ipsum</h3>
+              <p>Nisl sed aliquam</p>
+            </header>
+          </Link>
+        </article>
+        <article style={{ backgroundImage: `url(${pic05})` }}>
+          <Link
+            aria-label='Link to Landing Page'
+            to='/landing'
+            className='link primary'
+          >
+            <header className='major'>
+              <h3>Consequat</h3>
+              <p>Ipsum dolor sit amet</p>
+            </header>
+          </Link>
+        </article>
+        <article style={{ backgroundImage: `url(${pic06})` }}>
+          <Link
+            aria-label='Link to Landing Page'
+            to='/landing'
+            className='link primary'
+          >
+            <header className='major'>
+              <h3>Etiam</h3>
+              <p>Feugiat amet tempus</p>
+            </header>
+          </Link>
+        </article>
+      </section>
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    allMdx(sort: { frontmatter: { date: DESC } }) {
-      nodes {
-        frontmatter {
-          date(formatString: "MMMM D, YYYY")
-          title
-          slug
-          hero_image {
-            childImageSharp {
-              gatsbyImageData
-            }
-          }
-          hero_image_alt
-        }
-        id
-      }
-    }
-  }
-`
 
 export const Head = () => <Seo title='Work' />
 
