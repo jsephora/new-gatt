@@ -1,58 +1,84 @@
 .site-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: $feldgrau2;
-    margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $feldgrau2;
+  margin: 0;
 }
 
+a.site-title {
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:visited {
+    color: $grey6;
+  }
+}
 .nav-bar {
-    background-color: $grey2;
-    width: 100%;
-    padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-transform: uppercase;
+  background-color: $grey2;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.bg-dark {
+  background-color: $grey8 !important;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .nav-link-item {
-    padding-right: 2rem;
+  padding-right: 2rem;
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 }
 
 .nav-link-text {
-    color: $grey6;
+  color: $grey6;
 }
 
 .home-link {
-    &:hover, &:focus, &:active {
-        color: $blue;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue;
+  }
 }
 
 .work-link {
-    &:hover, &:focus, &:active {
-        color: $orchid;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $orchid;
+  }
 }
 .about-link {
-    &:hover, &:focus, &:active { 
-        color: $mint;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $mint;
+  }
 }
 
 .resume-link {
-    &:hover, &:focus, &:active {
-        color: $coral;
-    }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $coral;
+  }
 }

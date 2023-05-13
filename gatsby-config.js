@@ -15,11 +15,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        useResolveUrlLoader: true,
-        options: {
-          debug: true,
-          sourceMap: true, //default is false
-        },
         additionalData: `@use 'index' as *;`,
         sassOptions: {
           includePaths: [`${__dirname}/src/styles`],
