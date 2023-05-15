@@ -13,8 +13,9 @@ a.site-title {
     color: $grey6;
   }
 }
+
 .nav-bar {
-  background-color: $grey2;
+  background-color: $grey2 !important;
   width: 100%;
   padding: 1rem 1.5rem;
   display: flex;
@@ -27,10 +28,6 @@ a.site-title {
   pointer-events: none;
   cursor: default;
   color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.bg-dark {
-  background-color: $grey8 !important;
 }
 
 .nav-links {

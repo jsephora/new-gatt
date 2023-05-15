@@ -1,7 +1,14 @@
 import * as React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { navBar, siteTitle, homeLink, workLink, aboutLink, resumeLink } from './mainnav.module.scss'
+import {
+  navBar,
+  siteTitle,
+  homeLink,
+  workLink,
+  aboutLink,
+  resumeLink,
+} from './mainnav.module.scss'
 
 const MainNav = () => {
   const data = useStaticQuery(graphql`
@@ -15,7 +22,7 @@ const MainNav = () => {
   `)
 
   return (
-    <Navbar className={navBar} bg='light' expand='lg'>
+    <Navbar className={navBar} expand='lg'>
       <Container>
         <Navbar.Brand>
           <Link to='/' className={siteTitle}>
@@ -23,8 +30,11 @@ const MainNav = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav className='me-auto'>
+        <Navbar.Collapse
+          id='basic-navbar-nav'
+          className='justify-content-between'
+        >
+          <Nav>
             <Nav.Link className={homeLink} href='/'>
               Home
             </Nav.Link>
@@ -36,6 +46,11 @@ const MainNav = () => {
             </Nav.Link>
             <Nav.Link className={resumeLink} href='/resume' disabled>
               Resumé
+            </Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href='#' disabled>
+              ENG | JP
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
