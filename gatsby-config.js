@@ -33,14 +33,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        // rome-ignore lint/style/noUnusedTemplateLiteral: <explanation>
-        // name: `work`,
-        // path: `${__dirname}/work`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
