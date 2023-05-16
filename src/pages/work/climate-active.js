@@ -4,7 +4,6 @@ import Seo from '../../components/seo'
 import Banner from '../../components/banner'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Container, Row, Col } from 'react-bootstrap'
-// import heroClimateActive from './assets/heroClimateActive.jpg'
 
 const ClimateActive = () => {
   return (
