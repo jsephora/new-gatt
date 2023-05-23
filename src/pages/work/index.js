@@ -4,8 +4,8 @@ import Layout from '../../components/layout'
 import Seo from '../../components/seo'
 import Banner from '../../components/banner'
 import heroClimateActive from './assets/heroClimateActive.jpg'
-import pic02 from './assets/pic02.jpg'
-import pic03 from './assets/pic03.jpg'
+import heroPsims from './assets/heroPsims.png'
+import journeyMap from './assets/heroJourneyMap.png'
 import pic04 from './assets/pic04.jpg'
 import pic05 from './assets/pic05.jpg'
 import pic06 from './assets/pic06.jpg'
@@ -33,63 +33,66 @@ const WorkPage = () => {
             </header>
           </Link>
         </article>
-        <article style={{ backgroundImage: `url(${pic02})` }}>
+
+        <article style={{ backgroundImage: `url(${heroPsims})` }}>
           <Link
-            aria-label='Link to Landing Page'
-            to='/landing'
+            aria-label='Link to PSIMS'
+            to='/work/psims/'
             className='link primary'
           >
             <header className='major'>
-              <h3>Tempus</h3>
-              <p>feugiat amet tempus</p>
+              <h3>PSIMS</h3>
+              <p>Coming soon</p>
             </header>
           </Link>
         </article>
-        <article style={{ backgroundImage: `url(${pic03})` }}>
-          <Link
-            aria-label='Link to Landing Page'
-            to='/landing'
-            className='link primary'
-          >
-            <header className='major'>
-              <h3>Magna</h3>
-              <p>Lorem etiam nullam</p>
-            </header>
-          </Link>
-        </article>
+
         <article style={{ backgroundImage: `url(${pic04})` }}>
           <Link
             aria-label='Link to Landing Page'
-            to='/landing'
+            to='#'
             className='link primary'
           >
             <header className='major'>
-              <h3>Ipsum</h3>
-              <p>Nisl sed aliquam</p>
+              <h3>HP Printer App</h3>
+              <p>Coming soon</p>
+            </header>
+          </Link>
+        </article>
+
+        <article style={{ backgroundImage: `url(${journeyMap})` }}>
+          <Link
+            aria-label='Link to Landing Page'
+            to='#'
+            className='link primary'
+          >
+            <header className='major'>
+              <h3>Service experience team</h3>
+              <p>Coming soon</p>
             </header>
           </Link>
         </article>
         <article style={{ backgroundImage: `url(${pic05})` }}>
           <Link
             aria-label='Link to Landing Page'
-            to='/landing'
+            to='#'
             className='link primary'
           >
             <header className='major'>
-              <h3>Consequat</h3>
-              <p>Ipsum dolor sit amet</p>
+              <h3>Honda EV</h3>
+              <p>Coming soon</p>
             </header>
           </Link>
         </article>
         <article style={{ backgroundImage: `url(${pic06})` }}>
           <Link
             aria-label='Link to Landing Page'
-            to='/landing'
+            to='#'
             className='link primary'
           >
             <header className='major'>
-              <h3>Etiam</h3>
-              <p>Feugiat amet tempus</p>
+              <h3>ATO Beta</h3>
+              <p>Under construction</p>
             </header>
           </Link>
         </article>

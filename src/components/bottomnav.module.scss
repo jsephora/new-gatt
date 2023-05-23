@@ -1,16 +1,18 @@
-.bottom-nav {
+#bottom-nav {
     font-size: 11px;
     color: $grey5;
     text-transform: uppercase;
-    margin-bottom: 0.75rem;
-    margin-top: 5rem;
+    padding: 1rem 0;
+    background-color: #1c1c1c;
+}
+
+.bottomNavLinks {
     a {
-        color: $grey7;
+        color: $grey5;
         padding: 0.75rem;
         text-decoration: none;
     }
 }
-
 .home-link {
     &:hover, &:focus, &:active {
         color: $blue;
