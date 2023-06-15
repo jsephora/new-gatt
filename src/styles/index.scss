@@ -3,3 +3,6 @@
 // @forward 'custom';
 // @import 'banner';
 
+.disabled {
+    pointer-events: none;
+}

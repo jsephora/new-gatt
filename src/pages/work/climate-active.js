@@ -22,10 +22,7 @@ const ClimateActive = () => {
               alt='climate active screen design'
             />
             <caption>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
+            The goal of this project is to build a portal that enables customers to register with Climate Active and obtain carbon neutral certification. Entry to the portal is via the "GET STARTED" button at the top right of the screen.
             </caption>
           </Col>
         </Row>
@@ -33,12 +30,11 @@ const ClimateActive = () => {
           <Col>
             <h2 className='mb-3'>Key points</h2>
             <ul>
-              <li>75 - 82% of current users are tax consultants</li>
+              <li>The previous method of registering for certification was via a PDF smartform.</li>
               <li>
-                Goal is to make the application easier so more businesses will
-                apply themselves
+                The portal is required to collect the same data as the previous form, while also simplifying the process.
               </li>
-              <li>Replaces paper form and "smart" PDF form</li>
+              <li>Discovery and UX research conducted by third party prior to project initiation.</li>
             </ul>
           </Col>
         </Row>
@@ -50,12 +46,12 @@ const ClimateActive = () => {
             />
           </Col>
           <Col md={6}>
-            <h2 className='mb-3 mt-3 mt-md-0'>Whiteboarding</h2>
+            <h2 className='mb-3 mt-3 mt-md-0'>New requirements and technical limitations</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiumdod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.{' '}
+              Initially, a third-party UX vendor created wireframes and user flows. However, due to new requirements and technical limitations, significant modifications were necessary, resulting in consequential changes to the entire user flow. 
+            </p>
+            <p>
+              I collaborated with the business analyst and lead developer to create new UI designs that addressed these requirements while remaining technically feasible. Additionally, new designs were created for all seven of the carbon-neutral categories. At this point, the project delivery manager began to express concerns regarding the potential negative impact on budget and timelines.
             </p>
           </Col>
         </Row>
@@ -67,16 +63,19 @@ const ClimateActive = () => {
             />
           </Col>
           <Col md={6} className='order-md-1' >
-            <h2 className='mb-3 mt-3 mt-md-0'>Wireframes</h2>
+            <h2 className='mb-3 mt-3 mt-md-0'>Figma - XD - Figma conversion</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiumdod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.{' '}
+              The third party vendor created a style guide and some inital UI designs using Figma. The style guide was based off the Department's own style guide. Unfortunately, due to Australian government security rules regarding offshore servers we were not allowed to use Figma. This meant the Figma files needed to be converted to Adobe XD files but the conversion made them practically unusable. I subsequently did all of the UI design work in Adobe XD until...
+            </p>
+            <p>
+              For some background to this, at around this time a number of high profile organisations (Optus, Medibank) were targeted by hackers and suffered massive information breaches. Security was tightened in the Department and all processes and software was reviewed for potential vulnerabilities. Adobe's cloud services were disabled and Zeplin was banned. Figma was also still disallowed. This meant we were left with only Adobe XD (without Adobe Cloud). Obviously, this was a big problem for me as I needed to handover designs with CSS specifications.
+            </p>
+            <p>
+              After some "talks", we were allowed an exemption to use Figma, with some caveats. Thus began my return to Figma and the conversion and creation of Figma components, which I honestly quite enjoyed.
             </p>
           </Col>
         </Row>
-        <Row className='mb-5'>
+        {/* <Row className='mb-5'>
           <Col md={6}>
             <StaticImage
               src='./assets/high-fidelity.png'
@@ -123,7 +122,7 @@ const ClimateActive = () => {
               accumsan lacus vel facilisis.{' '}
             </p>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Layout>
   )

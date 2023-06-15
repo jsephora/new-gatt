@@ -38,7 +38,7 @@ const WorkPage = () => {
           <Link
             aria-label='Link to PSIMS'
             to='/work/psims/'
-            className='link primary'
+            className='link primary disabled'
           >
             <header className='major'>
               <h3>PSIMS</h3>
@@ -51,11 +51,11 @@ const WorkPage = () => {
           <Link
             aria-label='Link to Landing Page'
             to='#'
-            className='link primary'
+            className='link primary disabled'
           >
             <header className='major'>
               <h3>HP Printer App</h3>
-              <p>Coming soon</p>
+              <p>In the works</p>
             </header>
           </Link>
         </article>
@@ -64,11 +64,11 @@ const WorkPage = () => {
           <Link
             aria-label='Link to Landing Page'
             to='#'
-            className='link primary'
+            className='link primary disabled'
           >
             <header className='major'>
               <h3>Service experience team</h3>
-              <p>Coming soon</p>
+              <p>Under construction</p>
             </header>
           </Link>
         </article>
@@ -76,11 +76,11 @@ const WorkPage = () => {
           <Link
             aria-label='Link to Landing Page'
             to='#'
-            className='link primary'
+            className='link primary disabled'
           >
             <header className='major'>
               <h3>Honda EV</h3>
-              <p>Coming soon</p>
+              <p>On the to-do list</p>
             </header>
           </Link>
         </article>
@@ -88,11 +88,11 @@ const WorkPage = () => {
           <Link
             aria-label='Link to Landing Page'
             to='#'
-            className='link primary'
+            className='link primary disabled'
           >
             <header className='major'>
               <h3>ATO Beta</h3>
-              <p>Under construction</p>
+              <p>In the pipeline</p>
             </header>
           </Link>
         </article>
