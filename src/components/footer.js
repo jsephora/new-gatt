@@ -13,7 +13,7 @@ const Footer = () => {
               <StaticImage src='../images/social-placeholder.png'
               className='mb-4' />
               <br></br>
-              <span className={footerText}>© Allied Robotics Pty Ltd</span>
+              <span className={footerText}>© Joey Sephora</span>
             </Col>
           </Row>
         </Container>
